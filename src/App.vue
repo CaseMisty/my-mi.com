@@ -57,7 +57,7 @@ a:hover {
     width: 19.8%;
     height: 25px;
     border-left: 1px solid #e0e0e0;
-    a {font-size: 16px;}
+    a {font-size: 16px; color:$深灰;}
     line-height: 25px;
     text-align: center;
     &:first-child{border-left: none;}
@@ -208,28 +208,34 @@ a:hover {
     width: 120px;
     position: relative;
     margin-left: 15px;
+    a {
+      line-height: 40px;
+    }
     &:hover {
       background: #fff;
       a {
         color: $米橘;
         &:hover{color:$米橘!important;}
       }
-    }
-    a {
-      line-height: 40px;
+      .cart-menu {
+        height: 100px;
+        bottom: -100;
+      }
     }
     .cart-menu{
+      overflow: hidden;
       width: 316px;
-      height: 100px;
+      // height: 100px;
       background-color: #fff;
       z-index: 29;
       position: absolute;
       box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
       right: 0;
-      bottom: -80px;
+      bottom: -100px;
       color: #000;
       line-height: 100px;
       font-size: 12px;
+      height: 0;
     }
   }
   .topbar-info {
@@ -245,10 +251,12 @@ a:hover {
 .cart-enter-active, .cart-leave-active{
   transition: 0.5s;
 }
-.cart-enter,.cart-leave-active{
-  transform: translateY(-20px);
+.cart-leave-active{
+  transform: translateY(-100px);
 }
-
+.cart-enter{
+  // transform: translateY(-100px);
+}
 </style>
 <template>
   <div id="app">
