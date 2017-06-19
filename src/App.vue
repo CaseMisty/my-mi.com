@@ -2,6 +2,7 @@
 $浅灰: #b0b0b0;
 $深灰: #757575;
 $米橘: #ff6700;
+$小号: 12px;
 * {
   font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
   text-align: center;
@@ -20,7 +21,7 @@ a {
   text-decoration: none;
 }
 a:hover { 
-  color: $米橘 !important;
+  color: $米橘 ;
 }
 .ir {
   display: block;
@@ -57,7 +58,7 @@ a:hover {
     width: 19.8%;
     height: 25px;
     border-left: 1px solid #e0e0e0;
-    a {font-size: 16px; color:$深灰;}
+    a {font-size: 16px; color:$深灰; transition: 0.3s; &:hover{color: $米橘;}}
     line-height: 25px;
     text-align: center;
     &:first-child{border-left: none;}
@@ -127,7 +128,7 @@ a:hover {
     }
     dd a{
       margin: 10px 0 0;
-      font-size: 12px;
+      font-size: $小号;
       color: $浅灰;
     }
   }
@@ -146,7 +147,7 @@ a:hover {
     }
     p {
       margin: 0 0 16px;
-      font-size: 12px;
+      font-size: $小号;
       span {font-size: inherit;}
     }
   }
@@ -170,7 +171,7 @@ a:hover {
 .btn-small {
     width: 118px;
     height: 28px;
-    font-size: 12px;
+    font-size: $小号;
     line-height: 28px;
 }
 .btn-line-primary {
@@ -187,7 +188,7 @@ a:hover {
   background: #333;
   a {
     color: $浅灰;
-    font-size: 12px;
+    font-size: $小号;
     &:hover{color: #fff!important;}
   }
   .topbar-nav {
@@ -208,6 +209,7 @@ a:hover {
     width: 120px;
     position: relative;
     margin-left: 15px;
+    background-color: #404040;
     a {
       line-height: 40px;
     }
@@ -234,7 +236,7 @@ a:hover {
       bottom: -100px;
       color: #000;
       line-height: 100px;
-      font-size: 12px;
+      font-size: $小号;
       height: 0;
     }
   }
@@ -256,6 +258,179 @@ a:hover {
 }
 .cart-enter{
   // transform: translateY(-100px);
+}
+.site-header {
+  .container{padding-top: 22px;}
+  position: relative;
+  z-index: 20;
+  height: 100px;
+  .header-logo {
+    float: left;
+    a {display: block; float: left;}
+  }
+  .doodle {
+    height: 55px;
+    width: 165px;
+    margin-left: 14px;
+  }
+  .header-nav {
+    width: 850px - 165px;
+    float: left;
+  }
+  .nav-category{
+    height: 70px;
+    li {
+      float: left;
+      height: 100%;
+      padding: 15px 10px;
+      cursor: pointer;
+      font-size: 16px;
+      &:hover{color: $米橘;}
+      a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        color: #000;
+        &:hover{color: $米橘;}
+      }
+    }
+  }
+}
+.header-search {
+  &:hover input{
+    border-color: $浅灰;
+  }
+  float: right;
+  width: 296px;
+  height: 50px;
+  position: relative;
+  .search-text {
+    position: absolute;
+    text-align: left;
+    top: 0;
+    right: 51px;
+    z-index: 1;
+    width: 223px;
+    height: 50px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    font-family: 'sontti';
+    line-height: 48px;
+    outline: 0;
+    transition: all 0.3s;
+  }
+  .search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 52px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    font-size: 18px;
+    line-height: 18px;
+    background: #fff;
+    color: #616161;
+    outline: 0;
+    transition: all 0.3s;
+  }
+  .search-hot-words {
+    position: absolute;
+    top: 14px;
+    right: 62px;
+    z-index: 2;
+    text-align: right;
+    a {
+      display: inline-block;
+      margin-left: 5px;
+      padding: 0 5px;
+      font-size: $小号;
+      background: #eee;
+      color: #757575;
+      -webkit-transition: all .2s;
+      transition: all .2s;
+    }
+  }
+  .search-hot-words a, .search-btn{
+    &:hover{
+      color: #fff;
+      background-color: $米橘;
+    }
+  }
+}
+.fade-enter-active{
+  transition: 0s;
+}
+.fade-enter,.fade-leave-active{
+  opacity: 0;
+}
+.fade-leave-active{
+  transition-delay: 0.5s;
+  transition-duration: 0.3s;
+}
+.header-nav-menu{
+  height: 230px;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  background: #fff;
+  left: 0;
+  top: 250px;
+  ul {
+    width: 100%;
+    li {
+      float: left;
+      width: 204px;
+      height: 201px;
+      position: relative;
+      &::before{
+        position: absolute;
+        left: 0;
+        top: 35px;
+        z-index: 1;
+        width: 1px;
+        height: 100px;
+        content: "";
+        background-color: #e0e0e0;
+      }
+      &.first::before{display: none;}
+      .des {
+        position: absolute;
+        // display: inline-block;
+        left: (204px/2)-35px;
+        height: 18px;
+        font-size: $小号;
+        line-height: 14px;
+        padding: 1px 20px;
+        border: 1px solid #ff6700;
+        color: #ff6700;
+      }
+      img {
+        margin-top: 30px;
+      }
+      .product-name {
+        padding-top: 15px;
+        font-size: $小号;
+        line-height: 20px;
+        color: #333;
+      }
+      .price {
+        color: $米橘;
+        font-size: $小号;
+      }
+      a {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 </style>
 <template>
@@ -285,7 +460,54 @@ a:hover {
         </div>
       </div>
     </div>
-    <div class="site-header"></div>
+    <div class="site-header">
+      <div class="container clearfix">
+        <div class="header-logo clearfix">
+          <a href="http://www.mi.com/index.html" class="logo" 
+          :style="{height: '55px', width: '55px', backgroundImage:'url(static/logo-footer.png)'}"></a>
+          <a href="" class="doodle" style="background-image: url(static/doodle.gif);"></a>
+        </div>
+
+        <div class="header-nav">
+          <ul class="nav-category clearfix" @mouseenter="navMenuHover=true" @mouseleave="navMenuHover=false">
+            <li v-for="(item, index) of siteData.headerNav" @mouseenter="changeNavMenu(index)">{{item.title}}</li>
+            <li><a href="http://www.mi.com/service/">服务</a></li>
+            <li><a href="http://www.xiaomi.cn/">社区</a></li>
+          </ul>
+        </div>
+
+        <div class="header-search">
+          <form action="">
+            <input type="text" class="search-text" v-model="searchText" @focus="hotWords(true)" @blur="hotWords(false)">
+            <input type="text" class="search-btn iconfont" value="搜!">
+            <transition name="fade">
+              <div class="search-hot-words" v-if="showHotWords">
+                <a href="http://item.mi.com/product/10000031.html">红米4X 699元起</a>
+                <a href="http://www.mi.com/buytv/">电视4A</a>
+              </div>
+            </transition>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--标题栏一堆产品的展示导航-->
+    <transition name=fade>
+      <div class="header-nav-menu" v-if="showNavMenu" @mouseleave="navHover=false" @mouseenter="navHover=true">
+        <div class="container">
+          <ul class="clearfix">
+            <li v-for="(item,index) of siteData.headerNav[navIndex].products" :class="{first:index===0}">
+              <div v-if="item.des" class="des">{{item.des}}</div>
+              <img :src="item.src" alt="" width="160px" height="110px">
+              <div v-html="item.name" class="product-name"></div>
+              <div v-if="item.price" class="price">{{item.price}}</div>
+              <a :href="item.href"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </transition>
+
     <router-view></router-view>
     <div class="site-footer">
       <div class="container">
@@ -373,7 +595,27 @@ export default {
       adImgSrc: require('./assets/head-ad.jpg'),
       footerLogo: require('./assets/logo-footer.png'),
       siteData,
-      showCart: false
+      showCart: false,
+      showHotWords: true,
+      searchText: '',
+      navIndex: 0,
+      navMenuHover: false,
+      navHover: false
+    }
+  },
+  computed: {
+    showNavMenu () {
+      return this.navMenuHover || this.navHover
+    }
+  },
+  methods: {
+    hotWords (onFocus) {
+      if (this.searchText || onFocus) {
+        this.showHotWords = false
+      } else this.showHotWords = true
+    },
+    changeNavMenu (index) {
+      this.navIndex = index
     }
   },
   name: 'app'
