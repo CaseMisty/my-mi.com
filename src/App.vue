@@ -1,8 +1,5 @@
 <style lang="scss">
-$浅灰: #b0b0b0;
-$深灰: #757575;
-$米橘: #ff6700;
-$小号: 12px;
+@import './assets/_all.scss';
 * {
   font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
   text-align: center;

@@ -512,13 +512,73 @@ export default {
   goodsList: [
     {
       name: '小米MIX',
-      des: '享花呗6期分期免息',
-      price: '3499元起'
+      desc: '享花呗6期分期免息',
+      price: '3499元起',
+      src: 'static/xmad_14926862610682_UhkfS.png',
+      href: 'http://item.mi.com/product/10000022.html'
     },
     {
       name: '小米5s Plus',
-      des: '5.7英寸大屏双摄，骁龙821处理器',
-      price: '3499元起'
+      desc: '5.7英寸大屏双摄，骁龙821处理器',
+      price: '3499元起',
+      src: 'static/e991f1e2-20d8-40c3-bf1d-012b122c986b.png',
+      href: 'http://item.mi.com/product/10000025.html'
+    },
+    {
+      name: '小米Note 2',
+      desc: '限时特惠, 下单立减300元',
+      price: '2799元起',
+      src: 'static/bea012b2-b439-4df8-bbf8-0733f5a19630.png',
+      href: 'http://item.mi.com/product/10000021.html'
+    },
+    {
+      name: '小米电视4A 49英寸 标准版',
+      desc: '6月18日-20日,直降300元',
+      price: '2599元',
+      src: 'static/xmad_14926528960147_wJMsC.png',
+      href: 'http://item.mi.com/buy/mitv4a-49'
+    },
+    {
+      name: '小米笔记本',
+      desc: '更轻更薄, 像杂志一样随身携带',
+      price: '3599元起',
+      src: 'static/725a37e3-78b7-4298-8098-c40097bf179d.png',
+      href: 'http://item.mi.com/buymibook/air'
+    },
+    {
+      name: '10000mAh 小米移动电源2',
+      desc: '双向快充, 高密度铝聚合物电芯',
+      price: '79元',
+      src: 'static/xmad_14917453512947_AmXkT.png',
+      href: 'http://www.mi.com/battery2/'
+    },
+    {
+      name: '小米手环 2',
+      desc: 'OLED显示屏幕, 升级计步算法',
+      price: '149元',
+      src: 'static/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png',
+      href: 'http://www.mi.com/shouhuan2/'
+    },
+    {
+      name: '小米圈铁耳机Pro',
+      desc: '独创双动圈+动铁，限时免运费',
+      price: '149元',
+      src: 'static/302f2608-655a-489c-a0c5-a3b9172defd1.png',
+      href: 'http://www.mi.com/earphonepro/'
+    },
+    {
+      name: '米家空气净化器Pro',
+      desc: 'OLED显示屏幕，激光颗粒物传感器',
+      price: '1499元',
+      src: 'static/xmad_14972549116226_tZpod.png',
+      href: 'http://item.mi.com/1164300033.html'
+    },
+    {
+      name: '小米路由器3',
+      desc: '更快更强, 不止四天线',
+      price: '149元',
+      src: 'static/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png',
+      href: 'http://www.mi.com/miwifi3/'
     }
   ]
 }
