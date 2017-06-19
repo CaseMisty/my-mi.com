@@ -9,15 +9,22 @@
 <template>
   <div class="head-slide">
     <div class="container">
-      <div class="reac">
-        adfadf 
-      </div>  
+      <head-slide>
+        <div style="position: absolute; left: 0; top: 0;">faaqqqq</div>
+      </head-slide>
+      <div class="home-hero-sub row">
+        
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import headSlide from './components/headSlide.vue'
 export default {
+  components: {
+    headSlide
+  },
   data () {
     return {
       a: ''

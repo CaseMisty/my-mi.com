@@ -439,5 +439,62 @@ export default {
         }
       ]
     }
-  ]
+  ],
+  headSlide: [
+    {
+      src: 'static/hs0.jpg',
+      href: 'http://a.union.mi.com/mua?c=17409.0056'
+    },
+    {
+      src: 'static/hs1.jpg',
+      href: 'http://item.mi.com/product/10000041.html'
+    },
+    {
+      src: 'static/hs2.jpg',
+      href: 'http://item.mi.com/product/10000029.html'
+    },
+    {
+      src: 'static/hs3.jpg',
+      href: 'http://www.mi.com/hot/'
+    },
+    {
+      src: 'static/hs4.jpg',
+      href: 'http://www.mi.com/mibookair/'
+    },
+    {
+      src: 'static/hs5.jpg',
+      href: 'http://www.mi.com/roomrobot'
+    }
+  ],
+  homeHeroSub: {
+    homeChannelList: [
+      {
+        name: '选购手机',
+        href: 'http://www.mi.com/compare/'
+      },
+      {
+        name: '企业团购',
+        href: 'http://www.mi.com/compare/'
+      },
+      {
+        name: '一元活动',
+        href: 'http://www.mi.com/compare/'
+      },
+      {
+        name: '小米移动',
+        href: 'http://www.mi.com/compare/'
+      },
+      {
+        name: '以旧换新',
+        href: 'http://www.mi.com/compare/'
+      },
+      {
+        name: '话费充值',
+        href: 'http://www.mi.com/compare/'
+      }
+    ],
+    homePromoList: [
+
+    ]
+  }
 }
