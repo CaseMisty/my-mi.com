@@ -508,5 +508,17 @@ export default {
       }
 
     ]
-  }
+  },
+  goodsList: [
+    {
+      name: '小米MIX',
+      des: '享花呗6期分期免息',
+      price: '3499元起'
+    },
+    {
+      name: '小米5s Plus',
+      des: '5.7英寸大屏双摄，骁龙821处理器',
+      price: '3499元起'
+    }
+  ]
 }

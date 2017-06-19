@@ -18,6 +18,7 @@ $米橘: #ff6700;
   background: #5f5750;
   width: 234px;
   height: 170px;
+  float: left;
 }
 .home-channel-list li {
   position: relative;
@@ -48,27 +49,92 @@ $米橘: #ff6700;
     }
   }
 }
-
+.home-promo-list {
+  float: left;
+  li {
+    float: left;
+    &:first-child {
+      margin-left: 14px;
+    }
+    margin-left: 15px;
+  }
+}
+.box-hd {
+  position: relative;
+  overflow: hidden;
+  height: 58px;
+  -webkit-font-smoothing: antialiased;
+  .title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+    text-align: left;
+    width: 200px;
+    float: left;
+  }
+  .more {
+    width: 72px;
+    height: 25px;
+    float: right;
+    // position: absolute;
+    // right: 0;
+    // margin-top: 10px;
+    div{
+      float: left;
+      width: 36px;
+      height: 24px;
+      padding: 3px 5px;
+      border: 1px solid #e0e0e0;
+      font-size: 16px;
+      line-height: 16px;
+    }
+    div.left {
+      border-right: none;
+    }
+  }
+}
 </style>
 
 <template>
-  <div class="head-slide">
-    <div class="container">
-      <head-slide>
-        <div style="position: absolute; left: 0; top: 0;">faaqqqq</div>
-      </head-slide>
-      <div class="home-hero-sub row">
-        <ul class="home-channel-list clearfix">
-          <li v-for="(item,index) of siteData.homeHeroSub.homeChannelList" 
-          :class="['channel-'+index]">
-            <a :href="item.href">{{item.name}}</a>
-          </li>
-        </ul>
-        <ul class="home-promo-list clearfix">
-          <li>
-            <a href=""><img src="" alt=""></a>
+  <div>
+    <div class="head-slide">
+      <div class="container">
+        <head-slide>
+          <div style="position: absolute; left: 0; top: 0;">faaqqqq</div>
+        </head-slide>
+        <div class="home-hero-sub clearfix">
+          <ul class="home-channel-list clearfix">
+            <li v-for="(item,index) of siteData.homeHeroSub.homeChannelList" 
+            :class="['channel-'+index]">
+              <a :href="item.href">{{item.name}}</a>
             </li>
-        </ul>
+          </ul>
+          <ul class="home-promo-list clearfix">
+            <li v-for="item of siteData.homeHeroSub.homePromoList">
+              <a :href="item.href">
+                <img :src="item.src" alt="" width="316" height="170">
+                </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="home-star-goods">
+      <div class="container">
+        <div class="box-hd clearfix">
+          <h2 class="title">小米明星单品</h2>
+          <div class="more clearfix">
+            <div class="left">←</div>
+            <div class="right">→</div>
+          </div>
+        </div>
+        <div class="box-bd" style="height:340px;">
+          <ul class="goods-list" style="width:2480px;height:340px;">
+            <li></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
