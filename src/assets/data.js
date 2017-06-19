@@ -494,6 +494,18 @@ export default {
       }
     ],
     homePromoList: [
+      {
+        src: 'static/xmad_14918858892222_fpCmG.jpg',
+        href: 'http://item.mi.com/product/10000024.html'
+      },
+      {
+        src: 'static/xmad_14977951260311_AlzsH.jpg',
+        href: 'http://item.mi.com/buyphone/redmi4x'
+      },
+      {
+        src: 'static/xmad_14978003231716_xIFyB.jpg',
+        href: 'http://www.mi.com/event/'
+      }
 
     ]
   }

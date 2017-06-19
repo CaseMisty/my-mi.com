@@ -131,7 +131,7 @@
     <span name="prev-btn" :style="`background-image: url('static/icon-slides.png');`" @click="goto(prevIndex)"></span>
     <span name="next-btn" :style="`background-image: url('static/icon-slides.png');`" @click="goto(nextIndex)"></span>
     <slot>
-      
+
     </slot>
   </div>
 </template>
@@ -147,6 +147,7 @@ export default {
   },
   data () {
     return {
+      isShow: true,
       slideNews: siteData.headSlide,
       nowIndex: 0,
       showLeft: false,
