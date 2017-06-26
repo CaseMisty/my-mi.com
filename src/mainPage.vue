@@ -105,7 +105,6 @@ import tenSlide from './components/tenSlide'
 import siteData from './assets/data.js'
 import siteCategory from './components/siteCategory'
 import miProduct from './components/mi-product'
-
 export default {
   components: {
     headSlide,

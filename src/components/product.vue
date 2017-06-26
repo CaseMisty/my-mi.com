@@ -6,16 +6,15 @@
   width: 234px;
   margin-left: 14px;
   margin-bottom: 14px;
-  background: #fff;
+  height: 300px;
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
-  height: 300px;
   padding: 34px 0 20px;
+  background: #fff;
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   }
-  overflow: hidden;
 }
 a {
   color: #000;
@@ -79,7 +78,7 @@ a {
 </style>
 
 <template>
-  <div class="brick">
+  <li class="brick">
     <a :href="data.href">
       <img :src="data.src" :alt="data.name" width="150" height="150">
       <p class="title">{{data.name}}</p>
@@ -90,7 +89,7 @@ a {
         <p class="author">来自于 {{data.comment.user}} 的评价</p>
       </div>
     </a>
-  </div>
+  </li>
 </template>
 
 <script>
