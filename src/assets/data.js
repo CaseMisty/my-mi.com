@@ -495,7 +495,7 @@ export default {
     ],
     homePromoList: [
       {
-        src: 'static/xmad_14918858892222_fpCmG.jpg',
+        src: 'static/xmad_14956125230756_SsjCW.jpg',
         href: 'http://item.mi.com/product/10000024.html'
       },
       {
@@ -584,7 +584,7 @@ export default {
   siteCategory: [
     {
       title: '手机 电话卡',
-      href: '',
+      href: 'www.baidu.com',
       products: [
         {
           name: '小米6',

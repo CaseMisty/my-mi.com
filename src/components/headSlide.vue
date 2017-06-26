@@ -13,7 +13,6 @@
   }
   .slide {
     position: relative;
-    overflow: hidden;
     @include slideSize($s-width, $s-height);
     img {
       @include slideSize($s-width, $s-height);

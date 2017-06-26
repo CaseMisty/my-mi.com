@@ -457,7 +457,9 @@ i:hover {
 </style>
 <template>
   <div id="app">
-    <div class="site-ad-bar" :style="`background-image: url(${adImgSrc})`"></div>
+    <div class="site-ad-bar" :style="`background-image: url(${adImgSrc})`">
+      <a href="http://hd.mi.com/x/06201t/index.html?client_id=180100041086&masid=17409.0065" style="display:block;width: 100%;height:100%;"></a>
+    </div>
     <div class="site-topbar">
       <div class="container">
         <div class="topbar-nav">
@@ -614,7 +616,7 @@ import siteData from './assets/data.js'
 export default {
   data () {
     return {
-      adImgSrc: require('./assets/head-ad.jpg'),
+      adImgSrc: require('./assets/head-ad1.jpg'),
       footerLogo: require('./assets/logo-footer.png'),
       siteData,
       showCart: false,

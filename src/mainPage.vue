@@ -59,6 +59,10 @@
     margin-left: 15px;
   }
 }
+.page-main {
+  padding-top: 60px;
+  background-color: #f5f5f5;
+}
 </style>
 
 <template>
@@ -87,6 +91,11 @@
     </div>
     <ten-slide :goodsList="siteData.goodsList">
     </ten-slide>
+    <div class="page-main">
+      <div class="container">
+        
+      </div>
+    </div>
   </div>
 </template>
 
