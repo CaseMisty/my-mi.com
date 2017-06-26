@@ -92,8 +92,8 @@
     <ten-slide :goodsList="siteData.goodsList">
     </ten-slide>
     <div class="page-main">
-      <div class="container">
-        
+      <div class="container clearfix">
+        <miProduct :data="siteData.home.class[0]"></miProduct>
       </div>
     </div>
   </div>
@@ -104,11 +104,14 @@ import headSlide from './components/headSlide.vue'
 import tenSlide from './components/tenSlide'
 import siteData from './assets/data.js'
 import siteCategory from './components/siteCategory'
+import miProduct from './components/mi-product'
+
 export default {
   components: {
     headSlide,
     tenSlide,
-    siteCategory
+    siteCategory,
+    miProduct
   },
   data () {
     return {

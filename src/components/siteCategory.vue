@@ -63,6 +63,10 @@
     width: 100%;
     line-height: $category-box-height/6;
     position: relative;
+    transition: 0.3s;
+    &:hover {
+      background-color: rgba(0,0,0,0.1);
+    }
   }
   .box-item a {
     color: #000;
@@ -91,7 +95,7 @@
   .item-link {
     display: inline-block;
     line-height: 40px;
-    padding: 18px 0 18px 20px;
+    padding: 18px 0 18px 50px;
   }
 </style>
 

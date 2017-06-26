@@ -1165,5 +1165,99 @@ export default {
         }
       ]
     }
-  ]
+  ],
+  home: {
+    title: '家电',
+    class: [
+      {
+        title: '热门',
+        products: [
+          {
+            href: 'https://item.mi.com/1170900021.html',
+            name: '小米电视4A 43英寸',
+            des: '2GB+8GB大存储，内置海量大片',
+            src: 'static/pms_1490077058.71391368!220x220.png',
+            price: '2099',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: 'https://item.mi.com/1171600035.html',
+            name: '小米电视4 55英寸',
+            des: '4.9mm超薄机身，无边框设计',
+            src: 'static/pms_1495074010.05677255!220x220.jpg',
+            price: '3999',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: '小米笔记本Air 13.3英寸',
+            des: '独立显卡,全金属机身,超长续航',
+            price: '4999',
+            src: 'static/pms_1469583247.6157588!220x220.jpg',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: '小米笔记本Air 12.5英寸',
+            des: '集成显卡,全金属机身,超长续航',
+            price: '3599',
+            src: 'static/pms_1469583247.6157588!220x220.jpg',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: '米家空气净化器Pro',
+            des: 'OLED显示屏幕,激光颗粒物传感器',
+            price: '1499',
+            src: 'static/pms_1477916442.08799062!220x220.jpg',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: '米家压力IH电饭煲',
+            des: '智能烹饪,灰铸铁粉体涂层内胆',
+            price: '999',
+            src: 'static/T1OVC_ByY_1RXrhCrK!220x220.jpg',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: 'Yeelight LED 吸顶灯',
+            des: '5分钟快装,月光夜灯,IP60级防尘',
+            price: '379',
+            src: 'static/pms_1490756071.3088664!220x220.png',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: '米家扫地机器人',
+            des: '',
+            price: '1699',
+            src: 'static/pms_1472609961.95298675!220x220.jpg'
+          }
+        ]
+      }
+    ]
+  }
 }
