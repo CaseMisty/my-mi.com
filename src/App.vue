@@ -367,6 +367,7 @@ a:hover {
   transition-delay: 0.5s;
   transition-duration: 0.3s;
 }
+
 .header-nav-menu{
   height: 230px;
   box-shadow: 0 3px 4px rgba(0,0,0,0.18);
@@ -429,6 +430,30 @@ a:hover {
     }
   }
 }
+@font-face {
+  font-family: 'iconfont';
+  src: url('font/iconfont.eot');
+  src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('font/iconfont.woff') format('woff'),
+  url('font/iconfont.ttf') format('truetype'),
+  url('font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+i:hover {
+  cursor: default;
+}
+.list-service .iconfont{
+  font-size: 24px;
+  line-height: 24px;
+  // margin-right: 6px;
+  vertical-align: -3px;
+}
 </style>
 <template>
   <div id="app">
@@ -440,7 +465,7 @@ a:hover {
         </div>
         <div class="topbar-cart" @mouseenter="showCart=true" @mouseleave="showCart=false">
           <a href="" >
-            <i class="iconfont"></i>
+            <i class="iconfont">&#xe60e;</i>
             购物车
             <span>( 0 )</span>
           </a>
@@ -476,7 +501,7 @@ a:hover {
         <div class="header-search">
           <form action="">
             <input type="text" class="search-text" v-model="searchText" @focus="hotWords(true)" @blur="hotWords(false)">
-            <input type="text" class="search-btn iconfont" value="搜!">
+            <button class="search-btn iconfont">&#xe608;</button>
             <transition name="fade">
               <div class="search-hot-words" v-if="showHotWords">
                 <a href="http://item.mi.com/product/10000031.html">红米4X 699元起</a>
@@ -511,31 +536,31 @@ a:hover {
         <ul class="list-service clearfix">
           <li>
             <a href="">
-              <i class="iconfont"></i>
+              <i class="iconfont">&#xe62e;</i>
               预约维修服务
             </a>
           </li>
           <li>
             <a href="">
-              <i class="iconfont"></i>
+              <i class="iconfont">&#xe776;</i>
               7天无理由退货
             </a>
           </li>
           <li>
             <a href="">
-              <i class="iconfont"></i>
+              <i class="iconfont">&#xe606;</i>
               15天免费换货
             </a>
           </li>
           <li>
             <a href="">
-              <i class="iconfont"></i>
+              <i class="iconfont">&#xe6a8;</i>
               满150元包邮
             </a>
           </li>
           <li>
             <a href="">
-              <i class="iconfont"></i>
+              <i class="iconfont">&#xe635;</i>
               520余家售后网点
             </a>
           </li>

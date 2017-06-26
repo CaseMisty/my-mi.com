@@ -65,13 +65,13 @@
   <div>
     <div class="head-slide">
       <div class="container">
-        <head-slide>
-          <div style="position: absolute; left: 0; top: 0;">faaqqqq</div>
-        </head-slide>
+        <headSlide>
+          <siteCategory :cdata="siteData.siteCategory"></siteCategory>
+        </headSlide>
         <div class="home-hero-sub clearfix">
           <ul class="home-channel-list clearfix">
             <li v-for="(item,index) of siteData.homeHeroSub.homeChannelList" 
-            :class="['channel-'+index]">
+            :class="['channel-' + index]">
               <a :href="item.href">{{item.name}}</a>
             </li>
           </ul>
@@ -94,10 +94,12 @@
 import headSlide from './components/headSlide.vue'
 import tenSlide from './components/tenSlide'
 import siteData from './assets/data.js'
+import siteCategory from './components/siteCategory'
 export default {
   components: {
     headSlide,
-    tenSlide
+    tenSlide,
+    siteCategory
   },
   data () {
     return {

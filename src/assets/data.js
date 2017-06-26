@@ -442,6 +442,10 @@ export default {
   ],
   headSlide: [
     {
+      src: 'static/xmad_14917471739205_EgXRY.jpg',
+      href: 'http://www.mi.com/hot/'
+    },
+    {
       src: 'static/hs0.jpg',
       href: 'http://a.union.mi.com/mua?c=17409.0056'
     },
@@ -452,10 +456,6 @@ export default {
     {
       src: 'static/hs2.jpg',
       href: 'http://item.mi.com/product/10000029.html'
-    },
-    {
-      src: 'static/hs3.jpg',
-      href: 'http://www.mi.com/hot/'
     },
     {
       src: 'static/hs4.jpg',
@@ -579,6 +579,591 @@ export default {
       price: '149元',
       src: 'static/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png',
       href: 'http://www.mi.com/miwifi3/'
+    }
+  ],
+  siteCategory: [
+    {
+      title: '手机 电话卡',
+      href: '',
+      products: [
+        {
+          name: '小米6',
+          href: '',
+          src: '',
+          choose: 'https://item.mi.com/product/10000041.html'
+        },
+        {
+          name: '小米Max 2',
+          href: '小米手机5c',
+          src: '',
+          choose: 'https://item.mi.com/product/10000041.html'
+        },
+        {
+          name: '小米Note2',
+          href: '',
+          src: '',
+          choose: 'https://item.mi.com/product/10000041.html'
+        },
+        {
+          name: '小米MIX',
+          href: '',
+          src: '',
+          choose: 'https://item.mi.com/product/10000041.html'
+        },
+        {
+          name: '小米5s',
+          href: '',
+          src: '',
+          choose: 'https://item.mi.com/product/10000041.html'
+        },
+        {
+          name: '小米5s Plus',
+          href: '',
+          src: '',
+          choose: 'https://item.mi.com/product/10000041.html'
+        },
+        {
+          name: '红米Note 4X',
+          href: '',
+          src: '',
+          choose: 'https://item.mi.com/product/10000041.html'
+        },
+        {
+          name: '红米4X',
+          href: '',
+          src: '',
+          choose: 'https://item.mi.com/product/10000041.html'
+        },
+        {
+          name: '红米4',
+          href: '',
+          src: '',
+          choose: 'https://item.mi.com/product/10000041.html'
+        },
+        {
+          name: '红米4A',
+          href: '',
+          src: '',
+          choose: 'https://item.mi.com/product/10000041.html'
+        },
+        {
+          name: '对比手机',
+          href: '',
+          src: ''
+        },
+        {
+          name: '小米移动 电话卡',
+          href: '',
+          src: ''
+        }
+      ]
+    },
+    {
+      title: '笔记本 平板',
+      href: '',
+      products: [
+        {
+          name: '笔记本12.5英寸',
+          src: '',
+          href: '',
+          choose: 'https://item.mi.com/product/10000032.html'
+        },
+        {
+          name: '笔记本13.3英寸',
+          src: '',
+          href: '',
+          choose: 'https://item.mi.com/product/10000032.html'
+        },
+        {
+          name: '小米平板3',
+          src: '',
+          href: '',
+          choose: 'https://item.mi.com/product/10000032.html'
+        },
+        {
+          name: 'USB-C电源适配器',
+          src: '',
+          href: ''
+        },
+        {
+          name: 'USB-C转换器',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米笔记本内胆包',
+          src: '',
+          href: ''
+        },
+        {
+          name: '悦米机械键盘',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米便携鼠标',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米无线鼠标',
+          src: '',
+          href: ''
+        },
+        {
+          name: '鼠标垫',
+          src: '',
+          href: ''
+        }
+      ]
+    },
+    {
+      title: '电视 盒子',
+      href: '',
+      products: [
+        {
+          name: '小米电视4 49英寸',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米电视4 65英寸',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米电视4A 43英寸',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米电视4A 49英寸',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米电视3s 48英寸',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米电视3s 60英寸',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米电视3s 65英寸 曲面',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米电视3 70英寸',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米盒子3s',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米盒子3c',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米盒子3 增强版',
+          src: '',
+          href: ''
+        },
+        {
+          name: '小米低音炮',
+          src: '',
+          href: ''
+        },
+        {
+          name: '家庭音响',
+          src: '',
+          href: ''
+        },
+        {
+          src: '',
+          href: '',
+          name: '安装服务'
+        },
+        {
+          src: '',
+          href: '',
+          name: '电视盒子配件'
+        }
+      ]
+    },
+    {
+      title: '路由器 智能硬件',
+      href: '',
+      products: [
+        {
+          src: '',
+          href: '',
+          name: '米家扫地机器人'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米VR眼镜'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米路由器'
+        },
+        {
+          src: '',
+          href: '',
+          name: '九号平衡车'
+        },
+        {
+          src: '',
+          href: '',
+          name: '电助力折叠自行车'
+        },
+        {
+          src: '',
+          href: '',
+          name: '米家恒温电水壶'
+        },
+        {
+          src: '',
+          href: '',
+          name: '米家车载空气净化器'
+        },
+        {
+          src: '',
+          href: '',
+          name: '手表'
+        },
+        {
+          src: '',
+          href: '',
+          name: '米家智能电饭煲'
+        },
+        {
+          src: '',
+          href: '',
+          name: '智能摄像机/相机/微单'
+        },
+        {
+          src: '',
+          href: '',
+          name: '净化器及滤芯'
+        },
+        {
+          src: '',
+          href: '',
+          name: '净水器及滤芯'
+        },
+        {
+          src: '',
+          href: '',
+          name: '手环及配件'
+        },
+        {
+          src: '',
+          href: '',
+          name: '米兔积木机器人及配件'
+        },
+        {
+          src: '',
+          href: '',
+          name: '智能灯'
+        },
+        {
+          src: '',
+          href: '',
+          name: '米兔智能故事机'
+        },
+        {
+          src: '',
+          href: '',
+          name: '智能家庭组合'
+        },
+        {
+          src: '',
+          href: '',
+          name: '血压计'
+        },
+        {
+          src: '',
+          href: '',
+          name: '体重秤/体脂秤'
+        },
+        {
+          src: '',
+          href: '',
+          name: '电动滑板车'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米无人机'
+        },
+        {
+          src: '',
+          href: '',
+          name: '米家行车记录仪'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米米家对讲机'
+        },
+        {
+          src: '',
+          href: '',
+          name: '全部智能硬件'
+        }
+      ]
+    },
+    {
+      title: '移动电源 电池 插线板',
+      href: '',
+      products: [
+        {
+          src: '',
+          name: '小米移动电源',
+          href: ''
+        },
+        {
+          src: '',
+          href: '',
+          name: '插线板'
+        },
+        {
+          src: '',
+          href: '',
+          name: '品牌移动电源'
+        },
+        {
+          src: '',
+          href: '',
+          name: '移动电源附件'
+        },
+        {
+          src: '',
+          href: '',
+          name: '充电器'
+        },
+        {
+          src: '',
+          href: '',
+          name: '彩虹5号电池'
+        },
+        {
+          src: '',
+          href: '',
+          name: '彩虹7号电池'
+        }
+      ]
+    },
+    {
+      title: '耳机 音箱',
+      href: '',
+      products: [
+        {
+          name: '小米头戴式耳机',
+          src: '',
+          href: ''
+        },
+        {
+          src: '',
+          href: '',
+          name: '头戴式耳机轻松版'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米降噪耳机'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米圈铁耳机 Pro'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米圈铁耳机'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米胶囊耳机'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米活塞耳机清新版'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米蓝牙耳机'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米运动蓝牙耳机'
+        },
+        {
+          src: '',
+          href: '',
+          name: '品牌耳机'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米网络音响'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米蓝牙音箱'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米随身蓝牙音箱'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小钢炮音箱 2'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米方盒子蓝牙音箱2'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米方盒子蓝牙音箱'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米音乐闹钟'
+        },
+        {
+          src: '',
+          href: '',
+          name: '小米米兔音箱'
+        },
+        {
+          src: '',
+          href: '',
+          name: '音乐蓝牙车充'
+        }
+      ]
+    },
+    {
+      title: '保护套 贴膜',
+      href: '',
+      products: [
+        {
+          name: '贴膜',
+          src: '',
+          href: ''
+        },
+        {
+          src: '',
+          href: '',
+          name: '保护套/保护壳'
+        }
+      ]
+    },
+    {
+      title: '线材 支架 存储卡',
+      href: '',
+      products: [
+        {
+          name: '线材',
+          src: '',
+          href: ''
+        },
+        {
+          src: '',
+          href: '',
+          name: '自拍杆'
+        },
+        {
+          src: '',
+          href: '',
+          name: '存储卡'
+        }
+      ]
+    },
+    {
+      title: '箱包 服饰 鞋 眼镜',
+      href: '',
+      products: [
+        {
+          name: '箱包',
+          src: '',
+          href: ''
+        },
+        {
+          src: '',
+          href: '',
+          name: '90分旅行箱'
+        },
+        {
+          src: '',
+          href: '',
+          name: '服饰'
+        },
+        {
+          src: '',
+          href: '',
+          name: '米家运动鞋 智能版'
+        },
+        {
+          src: '',
+          href: '',
+          name: 'TS尼龙偏光太阳镜'
+        }
+      ]
+    },
+    {
+      title: '米兔 生活周边',
+      href: '',
+      products: [
+        {
+          name: '米兔玩偶',
+          src: '',
+          href: ''
+        },
+        {
+          src: '',
+          href: '',
+          name: '生活周边'
+        },
+        {
+          src: '',
+          href: '',
+          name: '《小米》会刊'
+        },
+        {
+          src: '',
+          href: '',
+          name: '毛巾/浴巾'
+        },
+        {
+          src: '',
+          href: '',
+          name: '8H乳胶床品'
+        }
+      ]
     }
   ]
 }

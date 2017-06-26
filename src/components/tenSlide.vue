@@ -130,8 +130,12 @@ $小号: 12px;
     <div class="box-hd clearfix">
       <h2 class="title">{{tenSlideTitle}}</h2>
       <div class="more clearfix">
-        <div class="left" :class="{'move-active': !goodsOnLeft}" @click="checkGoods(true)">←</div>
-        <div class="right" :class="{'move-active': goodsOnLeft}" @click="checkGoods(false)">→</div>
+        <div class="left" :class="{'move-active': !goodsOnLeft}"  @click="checkGoods(true)">
+          <i class="iconfont">&#xe508;</i>
+        </div>
+        <div class="right" :class="{'move-active': goodsOnLeft}" @click="checkGoods(false)">
+         <i class="iconfont">&#xe601;</i>
+        </div>
       </div>
     </div>
     <div class="box-bd" style="height:340px;">

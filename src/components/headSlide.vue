@@ -59,6 +59,7 @@
         border-radius: $rect/2;
         background-color: #f3eae9;
         cursor: pointer;
+        transition: 0.3s;
       }
       .cur {
         width: 25px;
@@ -107,6 +108,19 @@
   #next {
     left: $s-width;
   }
+.slide ul{
+  position: relative;
+}
+.slide img{
+  position: absolute;
+  left: 0;
+}
+.sfade-enter,.sfade-leave-active {
+  opacity: 0;
+}
+.sfade-enter-active, .sfade-leave-active {
+  transition: 0.3s;
+}
 </style>
 
 <template>
@@ -114,14 +128,10 @@
     <ul>
       <li>
         <a :href="slideNews[nowIndex].href" target="_blank">
-          <transitoion name="slide-trans">
-            <img v-if="isShow" :src="slideNews[nowIndex].src" alt="">
-            <div v-if="isShow" class="title"> {{slideNews[nowIndex].title}} </div>
-          </transitoion>
-          <transitoion name="slide-trans-old">
-            <img v-if="!isShow" :src="slideNews[nowIndex].src" alt="">
-            <div v-if="!isShow" class="title"> {{slideNews[nowIndex].title}} </div>
-          </transitoion>
+          <transition name="sfade">
+            <img key="one" v-if="isShow" :src="slideNews[nowIndex].src" alt="">
+            <img key="two" v-else :src="slideNews[nowIndex].src" alt="">
+          </transition>
         </a>
       </li>
     </ul>
@@ -176,6 +186,7 @@ export default {
   },
   methods: {
     goto (index) {
+      this.isShow = !this.isShow
       this.nowIndex = index
     },
     runInv () {
