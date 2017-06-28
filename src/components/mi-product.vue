@@ -41,10 +41,7 @@ $height: 614px;
   margin-bottom: 30px;
 }
 .more {
-  height: 300px;
-  width: 234px;
   margin-left: 14px;
-
 }
 .brick-s{
   height: 143px;
