@@ -37,15 +37,21 @@ $小号: 12px;
       height: 24px;
       transition: color 0.3s;
       border: 1px solid #e0e0e0;
-      color: $深灰;
+      color: #e0e0e0;
       font-size: 16px;
       line-height: 18px;
     }
     div.left {
       border-right: none;
     }
+    i:hover{
+      cursor: default;
+    }
     .move-active {
-      cursor: pointer;
+      i:hover {
+        cursor: pointer;
+      }
+      color: #b0b0b0;
       &:hover{
         color: $米橘;
       }
@@ -130,17 +136,17 @@ $小号: 12px;
     <div class="box-hd clearfix">
       <h2 class="title">{{tenSlideTitle}}</h2>
       <div class="more clearfix">
-        <div class="left" :class="{'move-active': !goodsOnLeft}"  @click="checkGoods(true)">
+        <div class="left" :class="{'move-active': goodsOnLeft}"  @click="checkGoods(false)">
           <i class="iconfont">&#xe508;</i>
         </div>
-        <div class="right" :class="{'move-active': goodsOnLeft}" @click="checkGoods(false)">
+        <div class="right" :class="{'move-active': !goodsOnLeft}" @click="checkGoods(true)">
          <i class="iconfont">&#xe601;</i>
         </div>
       </div>
     </div>
     <div class="box-bd" style="height:340px;">
       <ul class="goods-list" :class="{'goods-list-move': goodsOnLeft}" style="width:2480px;height:340px;">
-        <li v-for="(item,index) of goodsList" :class="`rinbow-color-${index}`">
+        <li v-for="(item,index) of goodsList" :key="index" :class="`rinbow-color-${index}`">
           <img :src="item.src" :alt="item.name" width="160" height="160">
           <p class="name">{{item.name}}</p>
           <p class="desc">{{item.desc}}</p>
@@ -166,12 +172,12 @@ export default {
     },
     inv: {
       type: Number,
-      default: 3
+      default: 5
     }
   },
   data () {
     return {
-      goodsOnLeft: true
+      goodsOnLeft: false
     }
   },
   methods: {

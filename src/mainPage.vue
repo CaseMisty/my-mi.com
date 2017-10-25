@@ -74,13 +74,13 @@
         </headSlide>
         <div class="home-hero-sub clearfix">
           <ul class="home-channel-list clearfix">
-            <li v-for="(item,index) of siteData.homeHeroSub.homeChannelList" 
+            <li v-for="(item,index) of siteData.homeHeroSub.homeChannelList"  :key="index"
             :class="['channel-' + index]">
               <a :href="item.href">{{item.name}}</a>
             </li>
           </ul>
           <ul class="home-promo-list clearfix">
-            <li v-for="item of siteData.homeHeroSub.homePromoList">
+            <li v-for="item of siteData.homeHeroSub.homePromoList" :key="item.src">
               <a :href="item.href">
                 <img :src="item.src" alt="" width="316" height="170">
                 </a>
@@ -93,7 +93,8 @@
     </ten-slide>
     <div class="page-main">
       <div class="container clearfix">
-        <miProduct :data="siteData.home.class[0]"></miProduct>
+        <miProduct :data="siteData['家电']"></miProduct>
+        <mi-product :data="siteData['智能']"></mi-product>
       </div>
     </div>
   </div>

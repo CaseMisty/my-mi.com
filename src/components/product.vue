@@ -74,12 +74,33 @@ a {
     opacity: 1;
     filter: alpha(opacity=100)\9;
 }
-
+.info {
+  top: 0;
+  position: absolute;
+  left: 50%;
+  width: 64px;
+  height: 20px;
+  margin-left: -32px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+}
+.red {
+  background-color: #e53935;
+}
+.green {
+  background-color: #83c44e;
+}
+.yellow {
+  background-color: #ffac13;
+}
 </style>
 
 <template>
   <li class="brick">
     <a :href="data.href">
+      <p class="info" :class="data.info.color" v-if="data.info">{{data.info.text}}</p>
       <img :src="data.src" :alt="data.name" width="150" height="150">
       <p class="title">{{data.name}}</p>
       <p class="des">{{data.des}}</p>
@@ -95,6 +116,8 @@ a {
 <script>
 export default {
   props: ['data'],
-  data () { }
+  data () {
+    return {}
+  }
 }
 </script>

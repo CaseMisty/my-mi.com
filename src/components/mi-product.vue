@@ -85,26 +85,47 @@ $height: 614px;
   font-size: 50px;
   color: $米橘;
 }
+.to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transition: all 0.2s linear;
+}
+.cate-active {
+  color: $米橘 !important;
+  border-bottom: 1px solid !important;
+}
 </style>
 
 <template>
   <div class="main-box clearfix">
     <div class="box-hd">
-      <h2 class="title">{{title}}</h2>
+      <h2 class="title">{{data.title}}</h2>
       <ul class="more">
-        <li v-for="item of moreList" :key="item.id">{{item}}</li>
+        <li v-for="(item,index) of data.class" :key="item.title" :class="{'cate-active': index===current}">{{item.title}}</li>
       </ul>
     </div>
-    <a href="" class="left">
-      <img src="static/家电.jpg" width="234" height="614" alt="">
-    </a>
+    <div class="left">
+      <template v-if="data.leftImage.length === 1">
+        <a href="">
+          <img :src="data.leftImage[0]" width="234" height="614" alt="" class="to-top">
+        </a>
+      </template>
+      <template v-else>
+        <p>
+          <a href=""><img :src="data.leftImage[0]" width="234" height="300" alt="" class="to-top" style="margin-bottom: 8px;"></a>
+        </p>
+        <p>
+          <a href=""><img :src="data.leftImage[1]" width="234" height="300" alt="" class="to-top"></a>
+        </p>
+      </template>
+    </div>
     <ul class="list clearfix left">
-      <product v-for="item of data.products" :data="item" :key="item.id"></product>
+      <product v-for="item of currentCate.products" :data="item" :key="item.id"></product>
       <div class="more left clearfix">
         <div class="brick-s a">
-          <div class="title">米家扫地机人</div>
-          <div class="price">1699元</div>
-          <img src="static/pms_1472609961.95298675!220x220.jpg" width="80" height="80"alt="">
+          <div class="title">{{currentCate.littleOne.name}}</div>
+          <div class="price">{{currentCate.littleOne.price}}元</div>
+          <img :src="currentCate.littleOne.src" width="80" height="80"alt="">
         </div>
         <div class="brick-s b">
           <p style="position: absolute; left: 30px; top: 50px; font-size: 1.5em;">
@@ -124,7 +145,9 @@ export default {
   data () {
     return {
       title: '家电',
-      moreList: ['dfd热门', '电视影音', '电脑', '家居']
+      moreList: ['热门', '电视影音', '电脑', '家居'],
+      currentCate: this.data.class[0],
+      current: 0
     }
   },
   components: {

@@ -151,19 +151,19 @@ export default {
   ],
   footerInfoImgs: [
     {
-      src: 'static/footer-logo-1.png',
+      src: 'https://i1.mifile.cn/f/i/17/site/truste.png',
       href: 'http://privacy.truste.com/privacy-seal/validation?rid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8&lang=zh-cn'
     },
     {
-      src: 'static/footer-logo-2.png',
+      src: 'https://s01.mifile.cn/i/v-logo-2.png',
       href: 'http://privacy.truste.com/privacy-seal/validation?rid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8&lang=zh-cn'
     },
     {
-      src: 'static/footer-logo-3.png',
+      src: 'https://s01.mifile.cn/i/v-logo-1.png',
       href: 'http://privacy.truste.com/privacy-seal/validation?rid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8&lang=zh-cn'
     },
     {
-      src: 'static/footer-logo-4.png',
+      src: 'https://s01.mifile.cn/i/v-logo-3.png',
       href: 'http://privacy.truste.com/privacy-seal/validation?rid=4fc28a8c-6822-4980-9c4b-9fdc69b94eb8&lang=zh-cn'
     }
   ],
@@ -173,104 +173,100 @@ export default {
       title: '小米手机',
       products: [
         {
+          name: '小米MIX2',
+          des: '现货',
+          price: '3299元起',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/mix2320-220.png',
+          href: 'http://www.mi.com/max2/'
+        },
+        {
           name: '小米6',
           des: '新品',
           price: '2499元起',
-          src: 'static/米6.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/xm6-320.png',
           href: 'http://www.mi.com/mi6/'
         },
         {
           name: '小米Max 2',
-          des: '新品',
+          des: '多重优惠',
           price: '1699元起',
-          src: 'static/米max2.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/max2_toubu.png',
           href: 'http://www.mi.com/max2/'
         },
         {
-          name: '小米Note 2',
+          name: '小米Note 3',
           des: '现货',
           price: '2799元起',
-          src: 'static/xiaomiNOTE2.jpg',
-          href: 'http://www.mi.com/max2/'
-        },
-        {
-          name: '小米MIX',
-          des: '现货',
-          price: '3499元起',
-          src: 'static/MIX-320-220!160x110.jpg',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/note2320x220.png',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '小米5s Plus',
           price: '2299元起',
-          src: 'static/5spluse320_220!160x110.jpg',
-          href: 'http://www.mi.com/max2/'
-        },
-        {
-          name: '小米手机 5C',
-          price: '1499元',
-          src: 'static/mi5c_320x220.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/5x-2!160x110.jpg',
           href: 'http://www.mi.com/max2/'
         }
       ]
     },
     {
-      title: '红米手机',
+      title: '红米',
       products: [
         {
-          name: '红米Note 4X',
+          name: '红米5A',
           des: '热卖',
-          price: '799元起',
-          src: 'static/hmn4xtb!160x110.jpg',
+          price: '599元起',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/320-220-1.png',
           href: 'http://www.mi.com/mi6/'
         },
         {
-          name: '红米4X',
-          des: '热卖',
+          name: '红米Note 5A 标准版',
+          des: '新品',
           price: '699元起',
-          src: 'static/hm4x!160x110.jpg',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/3205a.png',
           href: 'http://www.mi.com/max2/'
         },
         {
-          name: '红米4A',
-          price: '599元',
-          src: 'static/hm4a320.png',
+          name: '红米Note 5A 高配版',
+          des: '新品',
+          price: '899元',
+          src: 'https://i1.mifile.cn/f/i/g/2015/320-220!160x110.jpg',
           href: 'http://www.mi.com/max2/'
         },
         {
-          name: '红米4',
-          price: '799元起',
-          src: 'static/320-2202!160x110.jpg',
+          name: '红米Note 4X',
+          price: '999元起',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/hmn4xtb!160x110.jpg',
           href: 'http://www.mi.com/max2/'
         }
       ]
     },
     {
-      title: '平板 · 笔记本',
+      title: '笔记本',
       products: [
         {
-          name: '小米平板3 64GB',
-          price: '1499元',
-          src: 'static/mipad3_320.png',
+          name: '小米笔记本Pro 15.6"',
+          des: '新品',
+          price: '5599元起',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/WechatIMG603.png',
           href: 'http://www.mi.com/mi6/'
         },
         {
           name: '小米笔记本Air 12.5\'\'',
           price: '3599元',
-          src: 'static/bijiben32012.5!160x110.jpg',
+          src: 'https://i1.mifile.cn/f/i/g/2015/video/bijiben32012.5!160x110.jpg',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '小米笔记本 13.3\'\'',
           des: '新品',
           price: '4799元',
-          src: 'static/bijiben320!160x110.jpg',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/bijiben320!160x110.jpg',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '小米笔记本 13.3\'\' 尊享版',
           price: '5999元',
-          src: 'static/bijiben320!160x110.jpg',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/bijiben320!160x110.jpg',
           href: 'http://www.mi.com/max2/'
         }
       ]
@@ -279,41 +275,43 @@ export default {
       title: '电视',
       products: [
         {
-          name: '小米电视4 49英寸',
-          des: '新品',
-          price: '3499元',
-          src: 'static/xmds_49.png',
+          name: '小米电视4 65英寸',
+          des: '超薄旗舰',
+          price: '8999元',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/dianshi465.png',
           href: 'http://www.mi.com/mi6/'
         },
         {
           name: '小米电视4 55英寸',
-          des: '新品',
+          des: '超薄旗舰',
           price: '3999元',
-          src: 'static/xmds_55.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/xmds_55.png',
           href: 'http://www.mi.com/max2/'
         },
         {
-          name: '小米电视4 65英寸',
-          des: '新品',
+          name: '小米电视4A 32英寸',
+          des: '热卖',
           price: '9999元',
-          src: 'static/xmds_65.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/daohang.png',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '小米电视4A 43英寸',
+          des: '热卖',
           price: '2099元',
-          src: 'static/320_43.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/320_43.png',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '小米电视4A 49英寸',
+          des: '热卖',
           price: '2599元起',
-          src: 'static/320_49.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/320_49.png',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '查看全部<br>小米电视',
-          src: 'static/70dianshi.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/70dianshi.png',
           href: 'http://www.mi.com/max2/'
         }
       ]
@@ -324,31 +322,25 @@ export default {
         {
           name: '小米盒子3s',
           price: '299元',
-          src: 'static/mihezi.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/mihezi.png',
           href: 'http://www.mi.com/mi6/'
         },
         {
           name: '小米盒子3c',
           price: '199元',
-          src: 'static/mihezi.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/mihezi.png',
           href: 'http://www.mi.com/mi6/'
         },
         {
           name: '小米盒子3 增强版',
           price: '399元',
-          src: 'static/hezi3s!160x110.jpg',
+          src: 'https://i1.mifile.cn/f/i/15/goods/nav/hezi3s!160x110.jpg',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '小米家庭影院',
           price: '1999元',
-          src: 'static/jtyy320x220.png',
-          href: 'http://www.mi.com/max2/'
-        },
-        {
-          name: '小米家庭音响 标准版',
-          price: '699元',
-          src: 'static/putonban!160x110.jpg',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/320x220.png',
           href: 'http://www.mi.com/max2/'
         }
       ]
@@ -357,42 +349,44 @@ export default {
       title: '路由器',
       products: [
         {
+          name: '小米路由器 3A',
+          des: '新品',
+          price: '139元',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/320X220!160x110.jpg',
+          href: 'http://www.mi.com/max2/'
+        },
+        {
           name: '小米路由器 HD/Pro',
+          des: '大容量',
           price: '499元起',
-          src: 'static/HD-Pro.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/HD-Pro.png',
           href: 'http://www.mi.com/mi6/'
         },
         {
           name: '小米路由器 3G',
-          des: '新品',
+          des: '双千兆',
           price: '249元',
-          src: 'static/3G.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/3G.png',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '小米路由器 3',
-          des: '包邮',
+          des: '双频',
           price: '129元',
-          src: 'static/xmlyq3.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/xmlyq3.png',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '小米路由器 3C',
           des: '包邮',
           price: '89元',
-          src: 'static/xmlyq3.png',
-          href: 'http://www.mi.com/max2/'
-        },
-        {
-          name: '小米WiFi电力猫',
-          price: '249元',
-          src: 'static/dlm01.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/xmlyq3.png',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '小米WiFi放大器 2',
           price: '49元',
-          src: 'static/fdq2!160x110.jpg',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/fdq2!160x110.jpg',
           href: 'http://www.mi.com/max2/'
         }
       ]
@@ -401,40 +395,40 @@ export default {
       title: '智能硬件',
       products: [
         {
-          name: '小米体脂秤',
-          price: '199元',
-          src: 'static/tzc320!160x110.jpg',
+          name: '小米无人机',
+          price: '2999元',
+          des: '航拍利器',
+          src: 'https://i1.mifile.cn/f/i/g/2015/123321!160x110.jpg',
           href: 'http://www.mi.com/mi6/'
         },
         {
           name: '小米手环2',
           des: '包邮',
           price: '149元',
-          src: 'static/sh2-320-220.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/sh2-320-220.png',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '小米净水器',
           price: '1299元起',
-          src: 'static/jsqcs-320-220.png',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/jsqcs-320-220.png',
           href: 'http://www.mi.com/max2/'
         },
         {
-          name: '小米VR眼镜 PLAY2',
-          des: '新品',
-          price: '99元',
-          src: 'static/xmvrplay2.png',
+          name: '米家扫地机器人',
+          price: '1699元起',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/saodijiqiren320-220!160x110.jpg',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '米家IH电饭煲',
           price: '399元',
-          src: 'static/dfb!160x110.jpg',
+          src: 'https://i1.mifile.cn/f/i/g/2015/cn-index/dfb!160x110.jpg',
           href: 'http://www.mi.com/max2/'
         },
         {
           name: '查看全部<br>智能硬件',
-          src: 'static/air2!160x110.jpg',
+          src: 'https://i1.mifile.cn/f/i/16/goods/nav/air2!160x110.jpg',
           href: 'http://www.mi.com/max2/'
         }
       ]
@@ -442,24 +436,28 @@ export default {
   ],
   headSlide: [
     {
-      src: 'static/xmad_14917471739205_EgXRY.jpg',
-      href: 'http://www.mi.com/hot/'
+      src: 'https://i1.mifile.cn/a4/xmad_15077714738381_erTKQ.jpg',
+      href: 'https://item.mi.com/product/10000070.html'
     },
     {
-      src: 'static/hs0.jpg',
-      href: 'http://a.union.mi.com/mua?c=17409.0056'
+      src: 'https://i1.mifile.cn/a4/xmad_15088407142731_cSDVI.jpg',
+      href: 'https://www.mi.com/mitv4A/32/'
     },
     {
-      src: 'static/hs1.jpg',
-      href: 'http://item.mi.com/product/10000041.html'
+      src: 'https://i1.mifile.cn/a4/xmad_15089148973819_fvOkX.jpg',
+      href: 'https://www.mi.com/mibookair-13in/'
     },
     {
-      src: 'static/hs2.jpg',
-      href: 'http://item.mi.com/product/10000029.html'
+      src: 'https://i1.mifile.cn/a4/xmad_15088541895789_ZvABT.jpg',
+      href: 'https://www.mi.com/p/2848.html'
     },
     {
-      src: 'static/hs4.jpg',
-      href: 'http://www.mi.com/mibookair/'
+      src: 'https://i1.mifile.cn/a4/xmad_15047918214756_FTUgm.jpg',
+      href: 'https://item.mi.com/product/10000064.html'
+    },
+    {
+      src: 'https://i1.mifile.cn/a4/xmad_15058906332794_gQDJX.jpg',
+      href: 'https://item.mi.com/product/10000041.html'
     },
     {
       src: 'static/hs5.jpg',
@@ -495,89 +493,89 @@ export default {
     ],
     homePromoList: [
       {
-        src: 'static/xmad_14956125230756_SsjCW.jpg',
-        href: 'http://item.mi.com/product/10000024.html'
+        src: 'https://i1.mifile.cn/a4/xmad_15067800288252_dVSID.jpg',
+        href: 'https://item.mi.com/product/10000068.html'
       },
       {
-        src: 'static/xmad_14977951260311_AlzsH.jpg',
-        href: 'http://item.mi.com/buyphone/redmi4x'
+        src: 'https://i1.mifile.cn/a4/xmad_1508759775229_tCauO.jpg',
+        href: 'https://www.mi.com/rover/'
       },
       {
-        src: 'static/xmad_14978003231716_xIFyB.jpg',
-        href: 'http://www.mi.com/event/'
+        src: 'https://i1.mifile.cn/a4/xmad_15035863419676_OXNRa.jpg',
+        href: 'https://item.mi.com/product/10000057.html'
       }
 
     ]
   },
   goodsList: [
     {
-      name: '小米MIX',
-      desc: '享花呗6期分期免息',
-      price: '3499元起',
-      src: 'static/xmad_14926862610682_UhkfS.png',
-      href: 'http://item.mi.com/product/10000022.html'
+      name: '小米note 3',
+      desc: '1600万美颜自拍，2倍变焦双摄',
+      price: '2499元起',
+      src: 'https://i1.mifile.cn/a4/xmad_1508760370419_xNWOg.jpg',
+      href: 'https://item.mi.com/product/10000069.html'
     },
     {
-      name: '小米5s Plus',
-      desc: '5.7英寸大屏双摄，骁龙821处理器',
-      price: '3499元起',
-      src: 'static/e991f1e2-20d8-40c3-bf1d-012b122c986b.png',
+      name: '红米Note 4X',
+      desc: '4100mAh超长续航，多彩金属',
+      price: '999元起',
+      src: 'https://i1.mifile.cn/a4/xmad_1489401341687_vUojl.png',
       href: 'http://item.mi.com/product/10000025.html'
     },
     {
-      name: '小米Note 2',
-      desc: '限时特惠, 下单立减300元',
-      price: '2799元起',
-      src: 'static/bea012b2-b439-4df8-bbf8-0733f5a19630.png',
+      name: '红米4X',
+      desc: '4100mAh超长续航，8 核处理器',
+      price: '699元起',
+      src: 'https://i1.mifile.cn/a4/xmad_14966625747867_qcTyh.png',
       href: 'http://item.mi.com/product/10000021.html'
     },
     {
-      name: '小米电视4A 49英寸 标准版',
-      desc: '6月18日-20日,直降300元',
-      price: '2599元',
-      src: 'static/xmad_14926528960147_wJMsC.png',
+      name: '小米电视4A 43英寸 标准版',
+      desc: '全高清HDR 四核高性能处理器',
+      price: '1899元',
+      src: 'https://i1.mifile.cn/a1/pms_1503909150.67293503!220x220.png',
       href: 'http://item.mi.com/buy/mitv4a-49'
     },
     {
       name: '小米笔记本',
       desc: '更轻更薄, 像杂志一样随身携带',
       price: '3599元起',
-      src: 'static/725a37e3-78b7-4298-8098-c40097bf179d.png',
+      src: 'https://i1.mifile.cn/a4/725a37e3-78b7-4298-8098-c40097bf179d',
       href: 'http://item.mi.com/buymibook/air'
     },
     {
-      name: '10000mAh 小米移动电源2',
-      desc: '双向快充, 高密度铝聚合物电芯',
-      price: '79元',
-      src: 'static/xmad_14917453512947_AmXkT.png',
+      name: '米家智能摄像机云台版',
+      desc: '红外夜视，720P分辨率',
+      price: '199元',
+      src: 'https://i1.mifile.cn/a4/xmad_15078617619273_gRwzn.png',
       href: 'http://www.mi.com/battery2/'
     },
     {
       name: '小米手环 2',
       desc: 'OLED显示屏幕, 升级计步算法',
       price: '149元',
-      src: 'static/6ef55907-bbed-49be-a2bb-be0821b5f7b8.png',
+      src: 'https://i1.mifile.cn/a4/6ef55907-bbed-49be-a2bb-be0821b5f7b8',
       href: 'http://www.mi.com/shouhuan2/'
     },
     {
-      name: '小米圈铁耳机Pro',
-      desc: '独创双动圈+动铁，限时免运费',
-      price: '149元',
-      src: 'static/302f2608-655a-489c-a0c5-a3b9172defd1.png',
+      name: '米家压力IH电饭煲',
+      desc: '智能烹饪，压力IH加热技术',
+      price: '999元',
+      src: 'https://i1.mifile.cn/a4/T1ZYC_BjWv1RXrhCrK.jpg',
       href: 'http://www.mi.com/earphonepro/'
     },
     {
       name: '米家空气净化器Pro',
       desc: 'OLED显示屏幕，激光颗粒物传感器',
       price: '1499元',
-      src: 'static/xmad_14972549116226_tZpod.png',
+      src: 'https://i1.mifile.cn/a4/xmad_14972549116226_tZpod.png',
       href: 'http://item.mi.com/1164300033.html'
     },
     {
       name: '小米路由器3',
       desc: '更快更强, 不止四天线',
-      price: '149元',
-      src: 'static/de35852a-1be5-4ef5-846f-dcdd2efcfea6.png',
+      price: '129元',
+      src: 'https://i1.mifile.cn/a4/de35852a-1be5-4ef5-846f-dcdd2efcfea6',
       href: 'http://www.mi.com/miwifi3/'
     }
   ],
@@ -1166,29 +1164,46 @@ export default {
       ]
     }
   ],
-  home: {
+  '家电': {
     title: '家电',
+    leftImage: [
+      'https://i1.mifile.cn/a4/xmad_15045249192253_YbRuZ.jpg'
+    ],
     class: [
       {
         title: '热门',
+        littleOne: {
+          href: '',
+          name: '小米VR眼镜',
+          price: '299',
+          src: 'https://i1.mifile.cn/a1/pms_1477985364.89714934!220x220.jpg'
+        },
         products: [
           {
             href: 'https://item.mi.com/1170900021.html',
-            name: '小米电视4A 43英寸',
-            des: '2GB+8GB大存储，内置海量大片',
-            src: 'static/pms_1490077058.71391368!220x220.png',
-            price: '2099',
+            name: '小米电视4A 32"',
+            des: '64位四核处理器／1GB+4GB大内存',
+            info: {
+              color: 'red',
+              text: '享9折'
+            },
+            src: 'https://i1.mifile.cn/a1/pms_1500287084.72131750!220x220.jpg',
+            price: '999',
             comment: {
-              user: '翔',
+              user: '非同儿戏',
               text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
             }
           },
           {
             href: 'https://item.mi.com/1171600035.html',
-            name: '小米电视4 55英寸',
-            des: '4.9mm超薄机身，无边框设计',
-            src: 'static/pms_1495074010.05677255!220x220.jpg',
-            price: '3999',
+            name: '小米电视4A 49英寸 标准版',
+            des: '2GB+8GB大储存 / 全高清HDR',
+            info: {
+              color: 'red',
+              text: '享9折'
+            },
+            src: 'https://i1.mifile.cn/a1/pms_1503909218.70932288!220x220.png',
+            price: '1999',
             comment: {
               user: '翔',
               text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
@@ -1196,9 +1211,24 @@ export default {
           },
           {
             href: '',
-            name: '小米笔记本Air 13.3英寸',
-            des: '独立显卡,全金属机身,超长续航',
-            price: '4999',
+            name: '小米笔记本Pro 15.6英寸',
+            des: '全金属机身/FHD全贴合屏幕',
+            price: '5599',
+            info: {
+              color: 'green',
+              text: '新品'
+            },
+            src: 'https://i1.mifile.cn/a1/pms_1505106710.28498495!220x220.jpg',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: '小米笔记本Air 13.3" i7处理器',
+            des: 'Intel酷睿i7处理器，8GB内存+256GB',
+            price: '5999',
             src: 'static/pms_1469583247.6157588!220x220.jpg',
             comment: {
               user: '翔',
@@ -1207,10 +1237,10 @@ export default {
           },
           {
             href: '',
-            name: '小米笔记本Air 12.5英寸',
-            des: '集成显卡,全金属机身,超长续航',
-            price: '3599',
-            src: 'static/pms_1469583247.6157588!220x220.jpg',
+            name: '米家恒温电水壶',
+            des: '水温智能控制，304 不锈钢内胆',
+            price: '199',
+            src: 'https://i1.mifile.cn/a1/pms_1465366178.11466342!220x220.jpg',
             comment: {
               user: '翔',
               text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
@@ -1218,45 +1248,161 @@ export default {
           },
           {
             href: '',
-            name: '米家空气净化器Pro',
-            des: 'OLED显示屏幕,激光颗粒物传感器',
-            price: '1499',
-            src: 'static/pms_1477916442.08799062!220x220.jpg',
+            name: '智米全直流变频空调',
+            des: '一级能效，强劲冷暖',
+            price: '4399',
+            src: 'https://i1.mifile.cn/a1/pms_1508120469.3053874!220x220.jpg',
             comment: {
               user: '翔',
               text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            },
+            info: {
+              color: 'green',
+              text: '新品'
             }
           },
           {
             href: '',
-            name: '米家压力IH电饭煲',
-            des: '智能烹饪,灰铸铁粉体涂层内胆',
-            price: '999',
-            src: 'static/T1OVC_ByY_1RXrhCrK!220x220.jpg',
+            name: '米家床头灯',
+            des: '如梦如幻，多彩光世界',
+            info: {
+              color: 'green',
+              text: '新品'
+            },
+            price: '249',
+            src: 'https://i1.mifile.cn/a1/pms_1508724951.09887337!220x220.jpg',
             comment: {
               user: '翔',
               text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
             }
-          },
-          {
-            href: '',
-            name: 'Yeelight LED 吸顶灯',
-            des: '5分钟快装,月光夜灯,IP60级防尘',
-            price: '379',
-            src: 'static/pms_1490756071.3088664!220x220.png',
-            comment: {
-              user: '翔',
-              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
-            }
-          },
-          {
-            href: '',
-            name: '米家扫地机器人',
-            des: '',
-            price: '1699',
-            src: 'static/pms_1472609961.95298675!220x220.jpg'
           }
         ]
+      }, {
+        title: '电视影音'
+      }, {
+        title: '电脑'
+      }, {
+        title: '家居'
+      }
+    ]
+  },
+  '智能': {
+    title: '家电',
+    leftImage: [
+      'https://i1.mifile.cn/a4/xmad_15021010132973_BOkcp.jpg',
+      'https://i1.mifile.cn/a4/xmad_15076499921129_idgHC.jpg'
+    ],
+    class: [
+      {
+        title: '热门',
+        littleOne: {
+          href: '',
+          name: '小白摄像机',
+          price: '399',
+          src: 'https://i1.mifile.cn/a1/pms_1468806372.46368911!220x220.jpg'
+        },
+        products: [
+          {
+            href: 'https://item.mi.com/1170900021.html',
+            name: '小米路由器3C',
+            des: 'APP智能控制，安全防蹭网',
+            info: {
+              color: 'yellow',
+              text: '免邮费'
+            },
+            src: 'https://i1.mifile.cn/a1/pms_1470288129.01686992!220x220.jpg',
+            price: '89',
+            comment: {
+              user: '非同儿戏',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: 'https://item.mi.com/1171600035.html',
+            name: '米家感应夜灯',
+            des: '超低功耗，亮度双档调节，可贴可挂​',
+            info: {
+              color: 'green',
+              text: '新品'
+            },
+            src: 'https://i1.mifile.cn/a1/pms_1500278194.46038854!220x220.jpg',
+            price: '49',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: '小米手环2',
+            des: 'OLED 显示屏幕，升级计步算法',
+            price: '149',
+            info: {
+              color: 'yellow',
+              text: '免邮费'
+            },
+            src: 'https://i1.mifile.cn/a1/pms_1467962689.97551741!220x220.jpg',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: '米家iHealth血压计',
+            des: '爸妈上手就会用的智能血压计',
+            price: '399',
+            src: 'https://i1.mifile.cn/a1/T1HQA_BCd_1RXrhCrK!220x220.jpg',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: '米家行车记录仪',
+            des: '晚上能拍清车牌的行车记录仪',
+            price: '349',
+            src: 'https://i1.mifile.cn/a1/pms_1488338229.6467773!220x220.jpg',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: '九号平衡车',
+            des: '年轻人的酷玩具，骑行遥控两种玩法',
+            price: '1999',
+            src: 'https://i1.mifile.cn/a1/T1PXhgBbdT1RXrhCrK!220x220.jpg',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          },
+          {
+            href: '',
+            name: '小米AI音箱',
+            info: {
+              color: 'green',
+              text: '新品'
+            },
+            price: '299',
+            src: 'https://i1.mifile.cn/a1/pms_1501057018.70015369!220x220.jpg',
+            comment: {
+              user: '翔',
+              text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
+            }
+          }
+        ]
+      }, {
+        title: '出行'
+      }, {
+        title: '健康'
+      }, {
+        title: '酷玩'
+      }, {
+        title: '路由器'
       }
     ]
   }

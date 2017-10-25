@@ -506,8 +506,8 @@ i:hover {
             <button class="search-btn iconfont">&#xe608;</button>
             <transition name="fade">
               <div class="search-hot-words" v-if="showHotWords">
-                <a href="http://item.mi.com/product/10000031.html">红米4X 699元起</a>
-                <a href="http://www.mi.com/buytv/">电视4A</a>
+                <a href="https://item.mi.com/product/10000070.html">小米Mix 2</a>
+                <a href="http://www.mi.com/buytv/">小米Note 3 现货</a>
               </div>
             </transition>
           </form>
@@ -520,7 +520,7 @@ i:hover {
       <div class="header-nav-menu" v-if="showNavMenu" @mouseleave="navHover=false" @mouseenter="navHover=true">
         <div class="container">
           <ul class="clearfix">
-            <li v-for="(item,index) of siteData.headerNav[navIndex].products" :class="{first:index===0}">
+            <li v-for="(item,index) of siteData.headerNav[navIndex].products" :class="{first:index===0}" :key="index">
               <div v-if="item.des" class="des">{{item.des}}</div>
               <img :src="item.src" alt="" width="160px" height="110px">
               <div v-html="item.name" class="product-name"></div>
@@ -616,8 +616,8 @@ import siteData from './assets/data.js'
 export default {
   data () {
     return {
-      adImgSrc: require('./assets/head-ad1.jpg'),
-      footerLogo: require('./assets/logo-footer.png'),
+      adImgSrc: 'https://i1.mifile.cn/a4/cms_15086594114041_asotb.jpg',
+      footerLogo: 'https://s01.mifile.cn/i/logo-footer.png?v2',
       siteData,
       showCart: false,
       showHotWords: true,
