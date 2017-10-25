@@ -90,22 +90,19 @@ $height: 614px;
 <template>
   <div class="main-box clearfix">
     <div class="box-hd">
-      <h2 class="title">家电</h2>
+      <h2 class="title">{{title}}</h2>
       <ul class="more">
-        <li>热门</li>
-        <li>电视影音</li>
-        <li>电脑</li>
-        <li>家居</li>
+        <li v-for="item of moreList" :key="item.id">{{item}}</li>
       </ul>
     </div>
     <a href="" class="left">
       <img src="static/家电.jpg" width="234" height="614" alt="">
     </a>
     <ul class="list clearfix left">
-      <product v-for="item of data.products" :data="item"></product>
+      <product v-for="item of data.products" :data="item" :key="item.id"></product>
       <div class="more left clearfix">
         <div class="brick-s a">
-          <div class="title">米家扫地机器人</div>
+          <div class="title">米家扫地机人</div>
           <div class="price">1699元</div>
           <img src="static/pms_1472609961.95298675!220x220.jpg" width="80" height="80"alt="">
         </div>
@@ -124,6 +121,12 @@ $height: 614px;
 <script>
 import product from './product'
 export default {
+  data () {
+    return {
+      title: '家电',
+      moreList: ['dfd热门', '电视影音', '电脑', '家居']
+    }
+  },
   components: {
     product
   },

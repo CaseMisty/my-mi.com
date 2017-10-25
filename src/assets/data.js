@@ -215,7 +215,7 @@ export default {
       ]
     },
     {
-      title: '红米',
+      title: '红米手机',
       products: [
         {
           name: '红米Note 4X',
