@@ -1229,7 +1229,7 @@ export default {
             name: '小米笔记本Air 13.3" i7处理器',
             des: 'Intel酷睿i7处理器，8GB内存+256GB',
             price: '5999',
-            src: 'static/pms_1469583247.6157588!220x220.jpg',
+            src: 'https://i1.mifile.cn/a1/pms_1499138177.54329452!220x220.jpg',
             comment: {
               user: '翔',
               text: '昨天刚收到，电视超一流，超好物流也快，雨天也不担务，...'
