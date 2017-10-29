@@ -101,7 +101,9 @@ $height: 614px;
     <div class="box-hd">
       <h2 class="title">{{data.title}}</h2>
       <ul class="more">
-        <li v-for="(item,index) of data.class" :key="item.title" :class="{'cate-active': index===current}">{{item.title}}</li>
+        <li v-for="(item,index) of data.class" :key="item.title" 
+         :class="{'cate-active': index===current}"
+         @click="current = index">{{item.title}}</li>
       </ul>
     </div>
     <div class="left">
@@ -119,23 +121,25 @@ $height: 614px;
         </p>
       </template>
     </div>
-    <ul class="list clearfix left">
-      <product v-for="item of currentCate.products" :data="item" :key="item.id"></product>
-      <div class="more left clearfix">
-        <div class="brick-s a">
-          <div class="title">{{currentCate.littleOne.name}}</div>
-          <div class="price">{{currentCate.littleOne.price}}元</div>
-          <img :src="currentCate.littleOne.src" width="80" height="80"alt="">
+    <template v-if="data.class[current].products">
+      <ul class="list clearfix left">
+        <product v-for="item of data.class[current].products" :data="item" :key="item.id"></product>
+        <div class="more left clearfix">
+          <div class="brick-s a">
+            <div class="title">{{data.class[current].littleOne.name}}</div>
+            <div class="price">{{data.class[current].littleOne.price}}元</div>
+            <img :src="data.class[current].littleOne.src" width="80" height="80"alt="">
+          </div>
+          <div class="brick-s b">
+            <p style="position: absolute; left: 30px; top: 50px; font-size: 1.5em;">
+              浏览更多
+            </p>
+            <small style="position: absolute; left: 30px; top: 80px;">热门</small>
+            <i class="iconfont">&#xe607;</i>
+          </div>
         </div>
-        <div class="brick-s b">
-          <p style="position: absolute; left: 30px; top: 50px; font-size: 1.5em;">
-            浏览更多
-          </p>
-          <small style="position: absolute; left: 30px; top: 80px;">热门</small>
-          <i class="iconfont">&#xe607;</i>
-        </div>
-      </div>
-    </ul>
+      </ul>
+    </template>
   </div>
 </template>
 
@@ -146,7 +150,6 @@ export default {
     return {
       title: '家电',
       moreList: ['热门', '电视影音', '电脑', '家居'],
-      currentCate: this.data.class[0],
       current: 0
     }
   },
