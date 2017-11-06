@@ -1,6 +1,6 @@
 # my-mi.com
 
-> imitate mi.com with Vue.js
+> 使用Vue.js仿写小米官网首页
 
 ## Build Setup
 
